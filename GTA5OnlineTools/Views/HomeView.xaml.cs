@@ -41,7 +41,7 @@ public partial class HomeView : UserControl
     {
         try
         {
-            var notice = await HttpHelper.DownloadString("https://gta.cnsakura.top/api/GTA5OnlineTools/notice.txt");
+            var notice = await HttpHelper.DownloadString("https://gta.icsakura.com/api/GTA5OnlineTools/notice.txt");
 
             if (string.IsNullOrEmpty(notice))
                 TextBox_Notice.Text = builder.ToString();
@@ -58,7 +58,7 @@ public partial class HomeView : UserControl
     {
         try
         {
-            var change = await HttpHelper.DownloadString("https://gta.cnsakura.top/api/GTA5OnlineTools/change.txt");
+            var change = await HttpHelper.DownloadString("https://gta.icsakura.com/api/GTA5OnlineTools/change.txt");
 
             if (string.IsNullOrEmpty(change))
                 TextBox_Change.Text = builder.ToString();

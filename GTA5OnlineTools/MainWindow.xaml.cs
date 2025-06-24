@@ -223,7 +223,7 @@ public partial class MainWindow
             });
 
             // 检测版本更新
-            var config = await HttpHelper.DownloadString("https://gta.cnsakura.top/api/GTA5OnlineTools/config.json");
+            var config = await HttpHelper.DownloadString("https://gta.icsakura.com/api/GTA5OnlineTools/config.json");
             if (string.IsNullOrEmpty(config))
             {
                 LoggerHelper.Error("网络异常");
